@@ -1,0 +1,56 @@
+{
+    "name": "sudhanshu-mittal/laravel-api-response",
+    "description": "Renders consistent HTTP JSON responses for API-based projects",
+    "keywords": [
+        "laravel",
+        "api",
+        "json",
+        "response"
+    ],
+    "homepage": "https://github.com/sudhanshu-mittal/laravel-api-response",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Sudhanshu Mittal",
+            "email": "sudhanshu.mittal@deorwine.com",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "php": "^8.0",
+        "illuminate/contracts": "^9.10",
+        "illuminate/http": "^9.10",
+        "illuminate/translation": "^9.10"
+    },
+    "require-dev": {
+        "kennedy-osaze/php-cs-fixer-config": "^2.0",
+        "nunomaduro/collision": "^6.2",
+        "orchestra/testbench": "^7.4",
+        "phpunit/phpunit": "^9.5"
+    },
+    "autoload": {
+        "psr-4": {
+            "SudhanshuMittal\\LaravelApiResponse\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "SudhanshuMittal\\LaravelApiResponse\\Tests\\": "tests/"
+        }
+    },
+    "scripts": {
+        "test": "./vendor/bin/testbench package:test"
+    },
+    "config": {
+        "sort-packages": true
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "SudhanshuMittal\\LaravelApiResponse\\LaravelApiResponseServiceProvider"
+            ]
+        }
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
+}
